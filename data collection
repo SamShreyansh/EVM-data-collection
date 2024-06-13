@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+contract etherunits{
+    uint public ethereum;
+    function setnum(uint _ethereum) public {
+        ethereum = _ethereum;
+    }
+
+    function getvalueInWei() public view returns (uint) {
+        return ethereum*1e18;
+    }
+
+    function getvaueInGwei() public view returns (uint) {
+        return ethereum*1e9;
+    }
+
+    function getvalueINeTHER() public view returns (uint) {
+        return ethereum;
+    }
+}
